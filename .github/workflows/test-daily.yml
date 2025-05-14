@@ -40,8 +40,6 @@ jobs:
       - name: Run test script
         run: |
           python src/github-actions-test/main.py
-          mkdir -p ./data
-          cp last_run.txt ./data/
       - name: Upload run data
         uses: actions/upload-artifact@v4
         with:
