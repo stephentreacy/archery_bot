@@ -7,7 +7,7 @@ from discord.ext import commands
 from openpyxl import Workbook
 
 from config import config
-from db.models import User
+from db.models import get_student_ids
 
 logger = logging.getLogger(__name__)
 
@@ -54,7 +54,7 @@ class Attendance(commands.Cog):
                 discord_ids.add(user_id)
                 user_id_names[user_id] = user.name
 
-        student_ids = User.get_student_ids(list(discord_ids))
+        student_ids = get_student_ids(list(discord_ids))
         logger.info(f"Retrieved {len(student_ids)} Student IDs from DB: {student_ids}")
 
         retrieved_discord_ids = set(student_ids.keys())
