@@ -1,5 +1,6 @@
 import asyncio
 import logging
+import os
 
 import discord
 from discord.ext import commands
@@ -42,7 +43,17 @@ async def load_cogs():
 async def main():
     setup_database(config.DATABASE_URL)
     await load_cogs()
-    await client.start(config.DISCORD_TOKEN)
+    if os.environ.get("GITHUB_ACTIONS") == "true":
+        logger.info("Running in GitHub Actions - will stop after 10 minutes")
+        try:
+            await asyncio.wait_for(
+                client.start(config.DISCORD_TOKEN), timeout=600
+            )  # 600 seconds = 10 minutes
+        except asyncio.TimeoutError:
+            logger.info("10 minute timeout reached, shutting down")
+            await client.close()
+    else:
+        await client.start(config.DISCORD_TOKEN)
 
 
 if __name__ == "__main__":
