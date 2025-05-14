@@ -39,7 +39,7 @@ jobs:
           fi
       - name: Run test script
         run: |
-          python github-actions-test/test_run.py
+          python github-actions-test/main.py
           mkdir -p ./data
           cp last_run.txt ./data/
       - name: Upload run data
