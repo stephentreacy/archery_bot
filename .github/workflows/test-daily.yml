@@ -1,5 +1,11 @@
 name: Daily Test Run
 on:
+  push:
+    branches:
+      - github-actions-test
+  pull_request:
+    branches:
+      - master
   schedule:
     - cron: '0 12 * * *'
   workflow_dispatch:
