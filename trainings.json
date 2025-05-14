@@ -1,0 +1,99 @@
+{
+    "indoor": {
+        "start_date": "2025-02-01",
+        "end_date": "2025-04-03",
+        "training_sessions": {
+            "Monday": [
+                {
+                    "time": "07:00-09:00",
+                    "name": "Development Squad Training",
+                    "location": "Kingfisher (Hall 3)"
+                },
+                {
+                    "time": "17:00-20:00",
+                    "name": "Advanced Training",
+                    "location": "Kingfisher (Hall 3)"
+                }
+            ],
+            "Tuesday": [
+                {
+                    "time": "07:00-09:00",
+                    "name": "Development Squad Training",
+                    "location": "Kingfisher (Hall 3)"
+                }
+            ],
+            "Wednesday": [
+                {
+                    "time": "16:00-18:00",
+                    "name": "Beginner Training",
+                    "location": "Kingfisher (Hall 3)"
+                }
+            ],
+            "Thursday": [
+                {
+                    "time": "07:00-09:00",
+                    "name": "Development Squad Training",
+                    "location": "Kingfisher (Hall 3)"
+                },
+                {
+                    "time": "11:00-13:00",
+                    "name": "Development Squad Training",
+                    "location": "Kingfisher (Hall 3)"
+                },
+                {
+                    "time": "17:00-20:00",
+                    "name": "Advanced Squad Training",
+                    "location": "Dangan"
+                }
+            ],
+            "Friday": [
+                {
+                    "time": "07:00-09:00",
+                    "name": "Development Squad Training",
+                    "location": "Kingfisher (Hall 3)"
+                }
+            ],
+            "Saturday": [
+                {
+                    "time": "12:00-14:00",
+                    "name": "Advanced Squad Training",
+                    "location": "Dangan"
+                }
+            ]
+        }
+    },
+    "outdoor": {
+        "start_date": "2025-03-08",
+        "end_date": "2025-08-31",
+        "training_sessions": {
+            "Tuesday": [
+                {
+                    "time": "14:00-18:00",
+                    "name": "Outdoor Training",
+                    "location": "Dangan"
+                }
+            ],
+            "Thursday": [
+                {
+                    "time": "14:00-18:00",
+                    "name": "Outdoor Training",
+                    "location": "Dangan"
+                }
+            ],
+            "Friday": [
+                {
+                    "time": "17:00-20:00",
+                    "name": "Outdoor Training",
+                    "location": "Dangan"
+                }
+            ],
+            "Saturday": [
+                {
+                    "time": "10:00-14:00",
+                    "name": "Outdoor Training",
+                    "location": "Dangan"
+                }
+            ]
+        }
+    }
+}

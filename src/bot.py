@@ -3,7 +3,6 @@ import logging
 
 import discord
 from discord.ext import commands
-from dotenv import load_dotenv
 
 from config import config
 from db.models import setup_database
@@ -34,6 +33,7 @@ async def load_cogs():
         "commands.add_info",
         "commands.hello",
         "commands.attendance",
+        "tasks.post_attendance",
     ]
     for cog in cogs:
         await client.load_extension(cog)
