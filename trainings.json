@@ -51,11 +51,16 @@
                     "time": "07:00-09:00",
                     "name": "Development Squad Training",
                     "location": "Kingfisher (Hall 3)"
+                },
+                {
+                    "time": "15:00-18:00",
+                    "name": "Advanced Squad Training",
+                    "location": "Dangan"
                 }
             ],
             "Saturday": [
                 {
-                    "time": "12:00-14:00",
+                    "time": "12:00-16:00",
                     "name": "Advanced Squad Training",
                     "location": "Dangan"
                 }
